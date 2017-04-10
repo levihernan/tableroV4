@@ -1,0 +1,242 @@
+@media ( max-width: 992px ) {
+	.spreadedTablero{
+		display:none;
+	}
+	.collapsedTablero{
+		display:block !important;
+	}
+}
+.spreadedTablero{
+  padding: 0 80px !important;
+}
+.floatingHeaderContainer{
+  padding-right: 300px;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+	top: 70px;
+	user-select: none;
+	opacity: .8;
+}
+.opacity1{
+	opacity: 1 !important
+}
+.paddingContainer{
+	padding: 0 80px !important;
+}
+#tableroFloatingHeader{
+	background: #0092cf;
+	width: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	opacity: 0;
+}
+#tableroFloatingHeader td{
+	border: solid 1px #fff;
+	padding: 10px 5px;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: center;
+}
+.mobilerow{
+  display: block;
+}
+.fullwidth{
+  width: 100%;
+  display: block;
+}
+.halfwidth{
+  width: 50%;
+  display: inline-block;
+}
+
+.mobileIndicador{
+  text-align: center;
+  font-weight: bolder;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  background: linear-gradient(to left top, #2C98D6 50%, #2B9DE3 50%);
+  font-weight: 500 !important;
+  cursor: pointer;
+  color: #fff;
+}
+.mobileData{
+  background-color: #f5f5f5;
+  padding-right: 15px;
+}
+.mobileTable{
+  width: 100%;
+}
+.halfwidth:nth-child(2){
+  text-align: right;
+}
+.mobileTitulo{
+  background-color: #dfe6e8;
+  text-align: center;
+}
+.mobileSerie tr{
+  border-radius: 3px;
+  margin: 1px auto;
+  overflow: hidden;
+  display: block;
+  padding: 0 10px;
+}
+.mobileSerie{
+  height: 30px;
+  display: block;
+  transition: all ease 0.3s;
+  overflow: hidden;
+  margin: 2px auto;
+  border-radius: 3px
+}
+.mobileSerieActive{
+  height: 210px
+}
+.mobileCategoria td{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-top: 20px;
+  font-family: Ubuntu;
+}
+.rowTablero{
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  transition: all ease 0.5s;
+  margin: 0;
+}
+.rowTablero:hover{
+  background: #F2FCFF
+}
+.rowTablero td{
+  border: 1px solid #999;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 11px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 10px 5px;
+  cursor: default;
+}
+.colIndicador{
+  width: 30%;
+  text-align: center;
+  color: #39acde;
+  font-weight: bold;
+}
+.colUnidad{
+  width: 10%;
+}
+.colPeriodo{
+  width: 10%
+}
+.colValor{
+  width: 10%;
+}
+.colIA{
+  width: 10%
+}
+.rowTablero td:nth-child(3),
+.rowTablero td:nth-child(4),
+.rowTablero td:nth-child(6),
+.rowTablero td:nth-child(7){
+  background: rgba(0,0,0,0.02);
+}
+.rowTablero td:first-child{
+  border-left: 0;
+}
+.rowTablero td:last-child{
+  border-right: 0;
+}
+tbody tr:nth-child(2) td{
+  border-top: 0
+}
+tbody tr:last-child td{
+  border-bottom: 0
+}
+.desktopCategoria{
+  background: #C5E9F3;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  box-shadow: 0 0 20px -10px;
+  border-radius: 3px;
+}
+.tableHead{
+  background: #0091D1;
+  color: #fff;
+  text-align: center;
+  height: 80px;
+}
+.tableHead td{
+  border: solid 1px #fff;
+  padding: 10px 5px;
+  text-transform: uppercase;
+}
+#desktopTable{
+  width: 100%;
+  position: relative;
+  font-size: 12px;
+  float: left;
+  text-transform: uppercase;
+  color: #58595B;
+}
+#mobileTable{
+  margin: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+    color: #58595B;
+}
+.upValue{
+	color: #00B050 !important;
+}
+.downValue{
+	color: #C00000 !important;
+}
+.upValue::after{
+   font-family: FontAwesome;
+   content: " \f077";
+}
+.downValue::after{
+   font-family: FontAwesome;
+   content: " \f078";
+}
+.rojo{
+	color: #C00000 !important;
+}
+.verde{
+	color: #00B050 !important;
+}
+
+
+/*EXCEPCIONES MONETARIO Y FISCAL*/
+#fiscal .upValue,
+#fiscal .downValue,
+#monetario .upValue,
+#monetario .downValue{
+  color: #58595B !important;
+}
+#fiscal .upValue::after,
+#fiscal .upValue::before,
+#fiscal .downValue::after,
+#fiscal .downValue::before,
+#monetario .upValue::after,
+#monetario .upValue::before,
+#monetario .downValue::after,
+#monetario .downValue::before
+{
+  content: "";
+}
+
+/*EXCEPCION DESEMPLEO*/
+#consumo tr:last-child .upValue,
+#consumo tbody:last-child .upValue{
+  	color: #C00000 !important;
+}
+#consumo tr:last-child .downValue,
+#consumo tbody:last-child .downValue{
+  	color: #00B050 !important;
+}
