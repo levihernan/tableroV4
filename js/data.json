@@ -1,0 +1,37 @@
+{
+  "categoria": "Sector Real",
+  "variables": [{
+    "nombre": "Producción Automotriz",
+    "tablero": {
+      "indicador": "Producción Automotriz (1)",
+      "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
+      "ultimoDato": [{
+        "periodo": "Sep-16",
+        "valor": 2330123,
+        "variacion": -14
+      }],
+      "acumulado": [{
+        "periodo": "Anual",
+        "valor": 2330123,
+        "variacion": -7
+      }],
+      "flecha": true,
+      "invertirFlecha": false
+    },
+    "serie": {
+      "titulo": "Producción Automotriz",
+      "unidad": "En miles de dólares",
+      "ejeY": "Miles de USD$",
+      "simboloUnidad": "k USD$",
+      "variacion": true,
+      "variacionPorcentual": true,
+      "fuente": "INDEC",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "serie": [{
+        "tiempo": null,
+        "valor": null,
+        "variacion": null
+      }]
+    }
+  }]
+}
