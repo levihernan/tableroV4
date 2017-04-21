@@ -1,17 +1,6 @@
-// $.getJSON("js/data.json", function(json) {
-// dataset = json;
-//     console.log(dataset); // this will show the info it in firebug consol
-//
-// });
+var testAPI = "js/test.json";
 
-
-// var jsonTest = $.getJSON('http://revistasandia.com/misc/test.json');
-// document.getElementById('id').innerHTML += jsonTest.catergoria;
-
-$( document ).ready(function(){
-  var testAPI = "http://revistasandia.com/misc/test.json"
-  $.getJSON(testAPI, function(data) {
-    // document.getElementById("demo").innerHTML = data["categoria"];
-    alert(data.categoria);
-  });
+$.getJSON(testAPI, function(data) {
+  alert(data.name);
+  alert(data.categoria);
 });
