@@ -4,9 +4,14 @@
 //
 // });
 
-// $.getJSON('http://revistasandia.com/misc/test.json', function(data) {
-//     document.getElementById("demo").innerHTML = data["categoria"];
-// });
 
-var jsonTest = $.getJSON('http://revistasandia.com/misc/test.json');
-document.getElementById('id').innerHTML += jsonTest.catergoria;
+// var jsonTest = $.getJSON('http://revistasandia.com/misc/test.json');
+// document.getElementById('id').innerHTML += jsonTest.catergoria;
+
+$( document ).ready(function(){
+  var testAPI = "http://revistasandia.com/misc/test.json"
+  $.getJSON(testAPI, function(data) {
+    // document.getElementById("demo").innerHTML = data["categoria"];
+    alert(data.categoria);
+  });
+});
