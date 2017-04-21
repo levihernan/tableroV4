@@ -1,0 +1,24 @@
+<nav class="no-display">
+  <ul id="slide-out" class="side-nav fixed">
+    <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
+    <li><a class="waves-effect" href="#" onclick="closeNav();toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
+    <li class="no-padding">
+      <ul class="collapsible collapsible-accordion">
+        <li>
+          <!-- Foreach category -->
+          <a class="collapsible-header"><!--CATEGORY--><i class="material-icons">arrow_drop_down</i></a>
+          <div class="collapsible-body">
+            <ul>
+              <!-- Foreach item in category -->
+              <li><a class="waves-effect" href="#" onclick="toggleSeries();drawCharts(18);">Estimador Mensual de Actividad</a></li>
+              <!-- Endforeach -->
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- Endforeach -->
+    </li>
+  </ul>
+</nav>
