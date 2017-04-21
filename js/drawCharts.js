@@ -1,5 +1,5 @@
 function drawCharts(N){
-    closeNav(); //CIERRA EL DESPLEGABLE CUANDO SE SELECCIONA UNA SERIE
+    //closeNav(); //CIERRA EL DESPLEGABLE CUANDO SE SELECCIONA UNA SERIE
     nominal = [];
     variacion = []; //LIMPIA LAS SERIES
     dataLength = dataSerie.data.length+5; //Porque dataSerie ya tiene el slice
