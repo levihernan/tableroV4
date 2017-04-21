@@ -12,13 +12,11 @@ jQuery.ajax({
     dataType: "json",
     contentType: "application/text; charset=utf-8",
     success: function (data) {
-      alert('lalala')
+      dataset = data
     },
     error: function (response) {
         console.log("failed API load");
     }
 }).done(function(){
-    console.log(provincias_general_data);
-    load_map();
-    // loadDonutData();
+
 });
