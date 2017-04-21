@@ -5,14 +5,34 @@
     <li><div class="divider"></div></li>
     <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
     <li class="no-padding">
+
+
+      <script type="text/javascript">
+        for (var i = 0; i < dataset.length; i++) {
+          temphtml = "<ul class='collapsible collapsible-accordion'><li><a class='collapsible-header'>" + dataset[i].categoria + "<i class='material-icons'>arrow_drop_down</i></a><div class='collapsible-body'><ul>";
+          for (var i = 0; i < dataset.variables.length; i++) {
+            id += 1;
+            temphtml += "<li><a class='waves-effect' href='#' onclick='toggleSeries();drawCharts(" + id + ");'>" + dataset.variables.nombre + "</a></li>";
+          }
+          temphtml += "</ul></div></li></ul>";
+        }
+      </script>
+
+
+
+
+      <!-- Foreach category -->
       <ul class="collapsible collapsible-accordion">
         <li>
-          <!-- Foreach category -->
-          <a class="collapsible-header"><!--CATEGORY--><i class="material-icons">arrow_drop_down</i></a>
+          <a class="collapsible-header"><!-- CATEGORY --><i class="material-icons">arrow_drop_down</i></a>
           <div class="collapsible-body">
             <ul>
               <!-- Foreach item in category -->
-              <li><a class="waves-effect" href="#" onclick="toggleSeries();drawCharts(18);">Estimador Mensual de Actividad</a></li>
+              <li>
+                <a class="waves-effect" href="#" onclick="toggleSeries();drawCharts(/*  ID  */);">
+                  <!-- ITEM -->
+                </a>
+              </li>
               <!-- Endforeach -->
             </ul>
           </div>
