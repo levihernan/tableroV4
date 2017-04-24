@@ -1,4 +1,4 @@
 {
-  "categoria": "asdf",
+  "categoria": [{"categoria1"},{"categoria2"},{"categoria3"},{"categoria4"}],
   "name": "name JORGE"
 }
