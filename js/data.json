@@ -39,16 +39,16 @@
           "tablero": {
             "indicador": "Producción Automotriz (1)",
             "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
-            "ultimoDato": [{
+            "ultimoDato": {
               "periodo": "Sep-16",
               "valor": 2330123,
               "variacion": -14
-              }],
-              "acumulado": [{
+              },
+              "acumulado": {
                 "periodo": "Anual",
                 "valor": 2330123,
                 "variacion": -7
-                }],
+                },
                 "flecha": true,
                 "invertirFlecha": false
               },
@@ -76,16 +76,16 @@
                   "tablero": {
                     "indicador": "Producción Automotriz (1)",
                     "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
-                    "ultimoDato": [{
+                    "ultimoDato": {
                       "periodo": "Sep-16",
                       "valor": 2330123,
                       "variacion": -14
-                      }],
-                      "acumulado": [{
+                      },
+                      "acumulado": {
                         "periodo": "Anual",
                         "valor": 2330123,
                         "variacion": -7
-                        }],
+                        },
                         "flecha": true,
                         "invertirFlecha": false
                       },
@@ -110,16 +110,16 @@
                         "tablero": {
                           "indicador": "Producción Automotriz (1)",
                           "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
-                          "ultimoDato": [{
+                          "ultimoDato": {
                             "periodo": "Sep-16",
                             "valor": 2330123,
                             "variacion": -14
-                            }],
-                            "acumulado": [{
+                            },
+                            "acumulado": {
                               "periodo": "Anual",
                               "valor": 2330123,
                               "variacion": -7
-                              }],
+                              },
                               "flecha": true,
                               "invertirFlecha": false
                             },
