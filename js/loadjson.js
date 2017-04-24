@@ -18,8 +18,8 @@ jQuery.ajax({
     }
 }).done(function(){
 
-this.dataset = data;
+//Aqui dentro debe ser trabajada toda la DATA
 
 });
 
-alert(dataset);
+// Nono, te pido disculpas 24/04/17 //
