@@ -1,4 +1,4 @@
-var testAPI = "js/test.json";
+var testAPI = "js/data.json";
 var dataset ="";
 
 jQuery.ajax({
@@ -7,18 +7,18 @@ jQuery.ajax({
     dataType: "json",
     contentType: "application/text; charset=utf-8",
     success: function (data) {
-      $.each(data, function(index, element) {
-            $('body').append($('<div>', {
-                text: element.name
-            }));
-        });
+
+      jsondata = data
+
     },
     error: function (response) {
-        console.log("failed API load");
+        alert("failed API load");
     }
 }).done(function(){
 
-//Aqui dentro debe ser trabajada toda la DATA
+  //Aqui dentro debe ser trabajada toda la DATA
+  tabulate(jsondata);
+
 
 });
 
