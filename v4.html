@@ -25,44 +25,41 @@
 </head>
 
 <body>
-    <ul id="slide-out" class="side-nav fixed right-aligned">
-      <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
-      <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
-      <li>
-        <div class="divider"></div>
-      </li>
-      <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
-      <li class="no-padding" id="menuContent">
+  <ul id="slide-out" class="side-nav fixed right-aligned">
+    <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
+    <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
+    <li>
+      <div class="divider"></div>
+    </li>
+    <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
+    <li class="no-padding" id="menuContent">
 
-      </li>
-    </ul>
-  <div class="paltainer">
+    </li>
+  </ul>
+  <div class="contFixNavbar">
+    <p id="demo" class="light-blue darken-2"></p>
+    <table id="desktopTable" class="table">
+      <thead class="tableHead">
+        <tr>
+          <td rowspan="2" class="center-align">Indicador</td>
+          <td rowspan="2" class="center-align">Unidad</td>
+          <td colspan="3" class="center-align">Últimos Datos</td>
+          <td colspan="3" class="center-align">Acumulado</td>
+        </tr>
+        <tr>
+          <td class="center-align">Período</td>
+          <td class="center-align">Valor</td>
+          <td class="center-align">Variación</td>
+          <td class="center-align">Período</td>
+          <td class="center-align">Valor</td>
+          <td class="center-align">Variación</td>
+        </tr>
+      </thead>
+      <tbody>
 
-    <div class="">
-      <p id="demo"></p>
-      <table id="desktopTable" class="table">
-        <thead class="tableHead">
-          <tr>
-            <td rowspan="2" class="center-align">Indicador</td>
-            <td rowspan="2" class="center-align">Unidad</td>
-            <td colspan="3" class="center-align">Últimos Datos</td>
-            <td colspan="3" class="center-align">Acumulado</td>
-          </tr>
-          <tr>
-            <td class="center-align">Período</td>
-            <td class="center-align">Valor</td>
-            <td class="center-align">Variación</td>
-            <td class="center-align">Período</td>
-            <td class="center-align">Valor</td>
-            <td class="center-align">Variación</td>
-          </tr>
-        </thead>
-        <tbody>
+      </tbody>
+    </table>
 
-        </tbody>
-      </table>
-
-    </div>
   </div>
 
 

@@ -159,7 +159,7 @@ tbody tr:last-child td{
 	border-bottom: 0
 }
 .desktopCategoria{
-	background: #C5E9F3;
+	background: #bbdefb;
 	width: 100%;
 	text-align: center;
 	height: 40px;
@@ -168,7 +168,7 @@ tbody tr:last-child td{
 	vertical-align: middle !important;
 }
 .tableHead{
-	background: #0091D1;
+	background: #2196f3;
 	color: #fff;
 	text-align: center;
 	height: 80px;
