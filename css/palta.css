@@ -40,3 +40,7 @@
     padding-right: 0;
   }
 }
+
+.center-table{
+  text-align: center !important;
+}
