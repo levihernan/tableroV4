@@ -1,7 +1,7 @@
 function tabulate(dataset) {
   tableData = '<tbody>';
   for (var i = 0; i < dataset.length; i++) {
-    tableData += "s<tr class='bg-info'><td colspan='8' class='desktopCategoria'>" + dataset[i].categoria + "</td></tr>";
+    tableData += "<tr class='bg-info'><td colspan='8' class='desktopCategoria'>" + dataset[i].categoria + "</td></tr>";
     for (var j = 0; j < dataset[i].variables.length; j++) {
       tableData += "<tr class='rowTablero'><td class='colIndicador'>" + dataset[i].variables[j].tablero.indicador + "</td>";
       tableData += "<td>" + dataset[i].variables[j].tablero.unidad + "</td>";
