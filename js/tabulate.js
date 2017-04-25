@@ -1,4 +1,4 @@
-function displayMenu(dataset) {
+function tabulate(dataset) {
   tableData = '<tbody>';
   for (var i = 0; i < dataset.length; i++) {
     tableData += "s<tr class='bg-info'><td colspan='8' class='desktopCategoria'>" + dataset[i].categoria + "</td></tr>";

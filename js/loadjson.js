@@ -21,7 +21,6 @@ jQuery.ajax({
   tabulate(jsondata);
 
 
-
 });
 
 // Nono, te pido disculpas 24/04/17 //
