@@ -1,9 +1,9 @@
 [{
   "categoria": "Sector Irreal",
   "variables": [{
-    "nombre": "Producción Automotriz",
+    "nombre": "Producción Lorem",
     "tablero": {
-      "indicador": "Producción Automotriz (1)",
+      "indicador": "Producción Lorem ",
       "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
       "ultimoDato": {
         "periodo": "Sep-16",
@@ -19,7 +19,7 @@
           "invertirFlecha": false
         },
         "serie": {
-          "titulo": "Producción Automotriz",
+          "titulo": "Producción Ipsum",
           "unidad": "En miles de dólares",
           "ejeY": "Miles de USD$",
           "simboloUnidad": "k USD$",
@@ -37,7 +37,7 @@
         {
           "nombre": "Producción de Motos",
           "tablero": {
-            "indicador": "Producción Automotriz (1)",
+            "indicador": "Producción Ipsum",
             "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
             "ultimoDato": {
               "periodo": "Sep-16",
@@ -74,7 +74,7 @@
                 "variables": [{
                   "nombre": "Producción Automotriz",
                   "tablero": {
-                    "indicador": "Producción Automotriz (1)",
+                    "indicador": "Producción Sit amet",
                     "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
                     "ultimoDato": {
                       "periodo": "Sep-16",
@@ -108,7 +108,7 @@
                       {
                         "nombre": "Producción de Motos",
                         "tablero": {
-                          "indicador": "Producción Automotriz (1)",
+                          "indicador": "Producción Dolor",
                           "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
                           "ultimoDato": {
                             "periodo": "Sep-16",

@@ -17,7 +17,9 @@ jQuery.ajax({
 }).done(function(){
 
   //Aqui dentro debe ser trabajada toda la DATA
+  displayMenu(jsondata);
   tabulate(jsondata);
+
 
 
 });

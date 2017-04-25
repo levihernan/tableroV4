@@ -5,25 +5,54 @@
   <meta charset="utf-8">
   <title>proximamenteV4</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/materialize.css">
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/tabulate.js"></script>
   <script src="js/loadjson.js"></script>
 
+  <link rel="stylesheet" href="css/beta-table.css">
+
 </head>
 
 <body>
-  <p id="demo"></p>
-  <table id="desktopTable" class="table">
-    <thead>
-      <tr>
-        <td><h4>Tabla</h4></td>
-      </tr>
-    </thead>
-    <tbody>
+  <nav class="no-display">
+    <ul id="slide-out" class="side-nav fixed">
+    <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
+    <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
+    <li class="no-padding" id="menuContent">
 
-    </tbody>
-  </table>
+    </li>
+  </ul>
+  </nav>
+  <div class="container">
 
+    <p id="demo"></p>
+    <table id="desktopTable" class="table">
+      <thead class="tableHead">
+        <tr>
+          <td rowspan="2">Indicador</td>
+          <td rowspan="2">Unidad</td>
+          <td colspan="3">Últimos Datos</td>
+          <td colspan="3">Acumulado</td>
+        </tr>
+        <tr>
+          <td>Período</td>
+          <td>Valor</td>
+          <td>Variación</td>
+          <td>Período</td>
+          <td>Valor</td>
+          <td>Variación</td>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </div>
 
 </body>
 
