@@ -31,12 +31,12 @@
                                         `.:+syhhhhhhhhddddddddhys/-`
                                             `.-:/+ooossooo+/:-.`
 */
-.paltainer {
-  padding-right: 300px !important;
+.contFixNavbar {
+  padding-right: 300px;
 }
 
 @media only screen and (max-width : 992px) {
-  .container {
+  .contFixNavbar {
     padding-right: 0;
   }
 }
