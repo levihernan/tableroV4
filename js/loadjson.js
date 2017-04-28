@@ -19,6 +19,7 @@ jQuery.ajax({
   //Aqui dentro debe ser trabajada toda la DATA
   displayMenu(jsondata);
   tabulate(jsondata);
+  highstocks(jsondata);
 
 
 });

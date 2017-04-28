@@ -9,134 +9,150 @@
         "periodo": "Sep-16",
         "valor": 2330123,
         "variacion": -14
+      },
+      "acumulado": {
+        "periodo": "Anual",
+        "valor": 2330123,
+        "variacion": -7
+      },
+      "flecha": true,
+      "invertirFlecha": false
+    },
+    "serie": {
+      "titulo": "Producción Ipsum",
+      "unidad": "En miles de dólares",
+      "ejeY": "Miles de USD$",
+      "simboloUnidad": "k USD$",
+      "variacion": true,
+      "variacionPorcentual": true,
+      "fuente": "INDEC",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "serie": [{
+        "tiempo": null,
+        "valor": null,
+        "variacion": null
+        }]
+      }
+    },
+    {
+      "nombre": "Producción de Motos",
+      "tablero": {
+        "indicador": "Producción Ipsum",
+        "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
+        "ultimoDato": {
+          "periodo": "Sep-16",
+          "valor": 2330123,
+          "variacion": -14
         },
         "acumulado": {
           "periodo": "Anual",
           "valor": 2330123,
           "variacion": -7
-          },
-          "flecha": true,
-          "invertirFlecha": false
         },
-        "serie": {
-          "titulo": "Producción Ipsum",
-          "unidad": "En miles de dólares",
-          "ejeY": "Miles de USD$",
-          "simboloUnidad": "k USD$",
-          "variacion": true,
-          "variacionPorcentual": true,
-          "fuente": "INDEC",
-          "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "serie": [{
-            "tiempo": null,
-            "valor": null,
-            "variacion": null
-            }]
-          }
-        },
-        {
-          "nombre": "Producción de Motos",
+        "flecha": true,
+        "invertirFlecha": false
+      },
+      "serie": {
+        "titulo": "Producción Automotriz",
+        "unidad": "En miles de dólares",
+        "ejeY": "Miles de USD$",
+        "simboloUnidad": "k USD$",
+        "variacion": true,
+        "variacionPorcentual": true,
+        "fuente": "INDEC",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "serie": [
+          [1272844800000,38.05],
+          [1272931200000,36.95],
+          [1273017600000,36.57],
+          [1273104000000,35.18],
+          [1273190400000,33.69],
+          [1273449600000,36.28],
+          [1273536000000,36.65],
+          [1273622400000,37.44],
+          [1273708800000,36.91],
+          [1273795200000,36.26],
+          [1274054400000,36.32],
+          [1274140800000,36.05],
+          [1274227200000,35.48],
+          [1274313600000,33.97],
+          [1274400000000,34.62],
+          [1274659200000,35.25],
+          [1274745600000,35.03],
+          [1274832000000,34.87],
+          [1274918400000,36.19],
+          [1275004800000,36.70]]
+        }
+        }]
+      },
+      {
+        "categoria": "Sector Real",
+        "variables": [{
+          "nombre": "Producción Automotriz",
           "tablero": {
-            "indicador": "Producción Ipsum",
+            "indicador": "Producción Sit amet",
             "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
             "ultimoDato": {
               "periodo": "Sep-16",
               "valor": 2330123,
               "variacion": -14
+            },
+            "acumulado": {
+              "periodo": "Anual",
+              "valor": 2330123,
+              "variacion": -7
+            },
+            "flecha": true,
+            "invertirFlecha": false
+          },
+          "serie": {
+            "titulo": "Producción Automotriz",
+            "unidad": "En miles de dólares",
+            "ejeY": "Miles de USD$",
+            "simboloUnidad": "k USD$",
+            "variacion": true,
+            "variacionPorcentual": true,
+            "fuente": "INDEC",
+            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "serie": [{
+              "tiempo": null,
+              "valor": null,
+              "variacion": null
+              }]
+            }
+          },
+          {
+            "nombre": "Producción de Motos",
+            "tablero": {
+              "indicador": "Producción Dolor",
+              "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
+              "ultimoDato": {
+                "periodo": "Sep-16",
+                "valor": 2330123,
+                "variacion": -14
               },
               "acumulado": {
                 "periodo": "Anual",
                 "valor": 2330123,
                 "variacion": -7
-                },
-                "flecha": true,
-                "invertirFlecha": false
               },
-              "serie": {
-                "titulo": "Producción Automotriz",
-                "unidad": "En miles de dólares",
-                "ejeY": "Miles de USD$",
-                "simboloUnidad": "k USD$",
-                "variacion": true,
-                "variacionPorcentual": true,
-                "fuente": "INDEC",
-                "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "serie": [{
-                  "tiempo": null,
-                  "valor": null,
-                  "variacion": null
-                  }]
-                }
+              "flecha": true,
+              "invertirFlecha": false
+            },
+            "serie": {
+              "titulo": "Producción Automotriz",
+              "unidad": "En miles de dólares",
+              "ejeY": "Miles de USD$",
+              "simboloUnidad": "k USD$",
+              "variacion": true,
+              "variacionPorcentual": true,
+              "fuente": "INDEC",
+              "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              "serie": [{
+                "tiempo": null,
+                "valor": null,
+                "variacion": null
                 }]
-              },
-              {
-                "categoria": "Sector Real",
-                "variables": [{
-                  "nombre": "Producción Automotriz",
-                  "tablero": {
-                    "indicador": "Producción Sit amet",
-                    "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
-                    "ultimoDato": {
-                      "periodo": "Sep-16",
-                      "valor": 2330123,
-                      "variacion": -14
-                      },
-                      "acumulado": {
-                        "periodo": "Anual",
-                        "valor": 2330123,
-                        "variacion": -7
-                        },
-                        "flecha": true,
-                        "invertirFlecha": false
-                      },
-                      "serie": {
-                        "titulo": "Producción Automotriz",
-                        "unidad": "En miles de dólares",
-                        "ejeY": "Miles de USD$",
-                        "simboloUnidad": "k USD$",
-                        "variacion": true,
-                        "variacionPorcentual": true,
-                        "fuente": "INDEC",
-                        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                        "serie": [{
-                          "tiempo": null,
-                          "valor": null,
-                          "variacion": null
-                          }]
-                        }
-                      },
-                      {
-                        "nombre": "Producción de Motos",
-                        "tablero": {
-                          "indicador": "Producción Dolor",
-                          "unidad": "Índice <nobr>(Ene-2015=100)</nobr>",
-                          "ultimoDato": {
-                            "periodo": "Sep-16",
-                            "valor": 2330123,
-                            "variacion": -14
-                            },
-                            "acumulado": {
-                              "periodo": "Anual",
-                              "valor": 2330123,
-                              "variacion": -7
-                              },
-                              "flecha": true,
-                              "invertirFlecha": false
-                            },
-                            "serie": {
-                              "titulo": "Producción Automotriz",
-                              "unidad": "En miles de dólares",
-                              "ejeY": "Miles de USD$",
-                              "simboloUnidad": "k USD$",
-                              "variacion": true,
-                              "variacionPorcentual": true,
-                              "fuente": "INDEC",
-                              "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                              "serie": [{
-                                "tiempo": null,
-                                "valor": null,
-                                "variacion": null
-                                }]
-                              }
-                              }]
-                            }]
+              }
+              }]
+              }]
