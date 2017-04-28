@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/headerMinisterio.css">
   <link rel="stylesheet" href="css/palta.css">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/modernizr.js"></script>
@@ -15,12 +16,9 @@
 
   <script src="js/tabulate.js"></script>
   <script src="js/displayMenu.js"></script>
-  <script src="js/loadjson.js"></script>
-
-
   <script src="https://code.highcharts.com/stock/highstock.js"></script>
-  <script type="text/javascript" src="js/highstocks.js"></script>
-
+  <script src="js/highstocks.js"></script>
+  <script src="js/loadjson.js"></script>
 
   <link rel="stylesheet" href="css/beta-table.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
@@ -29,48 +27,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-  <nav class="">
-    <ul id="slide-out" class="side-nav fixed right-aligned">
-      <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
-      <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader"><i class="material-icons">trending_up</i>Series históricas</a></li>
-      <li class="no-padding" id="menuContent">
-
-      </li>
-    </ul>
-  </nav>
-  <div class="paltainer">
-
-    <div class="container">
-      <p id="demo"></p>
-      <table id="desktopTable" class="table">
-        <thead class="tableHead">
-          <tr>
-            <td rowspan="2">Indicador</td>
-            <td rowspan="2">Unidad</td>
-            <td colspan="3">Últimos Datos</td>
-            <td colspan="3">Acumulado</td>
-          </tr>
-          <tr>
-            <td>Período</td>
-            <td>Valor</td>
-            <td>Variación</td>
-            <td>Período</td>
-            <td>Valor</td>
-            <td>Variación</td>
-          </tr>
-        </thead>
-        <tbody>
-
-        </tbody>
-      </table>
-      <div id="chart">
-
-      </div>
-    </div>
-=======
   <ul id="slide-out" class="side-nav fixed right-aligned">
     <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
     <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
@@ -105,8 +61,10 @@
 
       </tbody>
     </table>
+    <div class="" id="chart">
 
->>>>>>> origin/master
+    </div>
+
   </div>
 
 
@@ -119,20 +77,13 @@
       menuWidth: 300, // Default is 300
       edge: 'right', // Choose the horizontal origin
       closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-<<<<<<< HEAD
-        draggable: true // Choose whether you can drag to open on touch screens
-      }
-      );
-      // $('.button-collapse').sideNav('show');
-=======
       draggable: true // Choose whether you can drag to open on touch screens
     });
     // $('.button-collapse').sideNav('show');
->>>>>>> origin/master
 
-      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-      //$('.collapsible').collapsible();
-    </script>
-  </body>
+    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+    //$('.collapsible').collapsible();
+  </script>
+</body>
 
-  </html>
+</html>
