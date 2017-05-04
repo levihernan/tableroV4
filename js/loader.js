@@ -1,4 +1,3 @@
-
 var $body = document.body,
 		$wrap = document.getElementById('wrap'),
 

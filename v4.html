@@ -27,6 +27,7 @@
 </head>
 
 <body>
+  <div class="" id="wrap"></div>
   <ul id="slide-out" class="side-nav fixed right-aligned">
     <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
     <li><a class="waves-effect" href="#" onclick="toggleTablero();"><i class="material-icons">assignment</i>Tablero</a></li>
@@ -38,7 +39,7 @@
 
     </li>
   </ul>
-  <div class="contFixNavbar">
+  <div class="contFixNavbar container">
     <p id="demo" class="light-blue darken-2"></p>
     <table id="desktopTable" class="table">
       <thead class="tableHead">
@@ -69,7 +70,6 @@
 
 
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript">
     // Initialize collapse button
@@ -77,13 +77,16 @@
       menuWidth: 300, // Default is 300
       edge: 'right', // Choose the horizontal origin
       closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true // Choose whether you can drag to open on touch screens
-    });
-    // $('.button-collapse').sideNav('show');
+        draggable: true // Choose whether you can drag to open on touch screens
+      });
+      // $('.button-collapse').sideNav('show');
 
-    // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-    //$('.collapsible').collapsible();
-  </script>
-</body>
+      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+      //$('.collapsible').collapsible();
+    </script>
 
-</html>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js'></script>
+    <!-- <script type="text/javascript" src="js/loader.js"></script> -->
+  </body>
+
+  </html>
