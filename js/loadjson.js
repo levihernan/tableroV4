@@ -19,8 +19,8 @@ jQuery.ajax({
   //Aqui dentro debe ser trabajada toda la DATA
   displayMenu(jsondata);
   tabulate(jsondata);
-  highstocks(jsondata, 0);
-  flechitas();
+  highstocks(jsondata, 0, 0);
+  // flechitas();
 
 
   $('#wrap').toggleClass('dissapear');
