@@ -16,7 +16,7 @@
         "variacion": -7
       },
       "flecha": true,
-      "invertirFlecha": false
+      "invertirFlecha": true
     },
     "serie": {
       "titulo": "Producción Ipsum",
@@ -49,7 +49,7 @@
           "valor": 2330123,
           "variacion": -7
         },
-        "flecha": true,
+        "flecha": false,
         "invertirFlecha": false
       },
       "serie": {

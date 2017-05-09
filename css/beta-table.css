@@ -193,53 +193,26 @@ tbody tr:last-child td{
 	text-transform: uppercase;
 	color: #58595B;
 }
-.upValue{
+
+/*FUNCION FLECHITAS*/
+
+.showArrow .upValue{
 	color: #00B050 !important;
 }
-.downValue{
+.showArrow .downValue{
 	color: #C00000 !important;
 }
-.upValue::after{
+.showArrow .upValue::after{
 	font-family: FontAwesome;
 	content: " \f077";
 }
-.downValue::after{
+.showArrow .downValue::after{
 	font-family: FontAwesome;
 	content: " \f078";
 }
-.rojo{
+.invertirArrow .upValue{
 	color: #C00000 !important;
 }
-.verde{
-	color: #00B050 !important;
-}
-
-
-/*EXCEPCIONES MONETARIO Y FISCAL*/
-#fiscal .upValue,
-#fiscal .downValue,
-#monetario .upValue,
-#monetario .downValue{
-	color: #58595B !important;
-}
-#fiscal .upValue::after,
-#fiscal .upValue::before,
-#fiscal .downValue::after,
-#fiscal .downValue::before,
-#monetario .upValue::after,
-#monetario .upValue::before,
-#monetario .downValue::after,
-#monetario .downValue::before
-{
-	content: "";
-}
-
-/*EXCEPCION DESEMPLEO*/
-#consumo tr:last-child .upValue,
-#consumo tbody:last-child .upValue{
-	color: #C00000 !important;
-}
-#consumo tr:last-child .downValue,
-#consumo tbody:last-child .downValue{
+.invertirArrow .downValue{
 	color: #00B050 !important;
 }

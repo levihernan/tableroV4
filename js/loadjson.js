@@ -20,6 +20,8 @@ jQuery.ajax({
   displayMenu(jsondata);
   tabulate(jsondata);
   highstocks(jsondata);
+  flechitas();
+  $("#wrap").innerHTML() = ""
 
 
 });
