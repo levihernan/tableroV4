@@ -21,7 +21,9 @@ jQuery.ajax({
   tabulate(jsondata);
   highstocks(jsondata);
   flechitas();
-  $("#wrap").innerHTML() = ""
+
+  
+  $('#wrap').toggleClass('dissapear');
 
 
 });
