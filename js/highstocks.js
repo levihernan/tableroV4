@@ -1,4 +1,4 @@
-function highstocks(dataset){
+function highstocks(dataset, idCat, idVar){
   // Create the chart
   Highcharts.setOptions({
     lang: {
@@ -35,7 +35,7 @@ function highstocks(dataset){
     },
     credits: {
       enabled: true,
-      text: "Fuente: " + jsondata[0].variables[1].serie.fuente,  //PONER FUENTE
+      text: "Fuente: " + jsondata[idCat].variables[1].serie.fuente,  //PONER FUENTE
       href: '',
       style: { "cursor": "default", "color": "#999999", "fontSize": "12px" },
       position: {
@@ -50,7 +50,7 @@ function highstocks(dataset){
      },
 
     title: {
-      text: jsondata[0].variables[1].serie.titulo
+      text: jsondata[idCat].variables[1].serie.titulo
     },
 
     yAxis: [{
@@ -61,17 +61,17 @@ function highstocks(dataset){
            x: 2
        },
        title: {
-           text: jsondata[0].variables[1].serie.ejeY
+           text: jsondata[idCat].variables[1].serie.ejeY
        },
        height: '100%'
    }],
 
     series: [{
-      name: jsondata[0].variables[1].serie.titulo,
-      data: jsondata[0].variables[1].serie.serie,
+      name: jsondata[idCat].variables[1].serie.titulo,
+      data: jsondata[idCat].variables[1].serie.serie,
       tooltip: {
         valueDecimals: 2,
-        valueSuffix: jsondata[0].variables[1].serie.simboloUnidad,
+        valueSuffix: jsondata[idCat].variables[1].serie.simboloUnidad,
         xDateFormat: '%B, %Y',
       }
     }]

@@ -19,13 +19,14 @@ jQuery.ajax({
   //Aqui dentro debe ser trabajada toda la DATA
   displayMenu(jsondata);
   tabulate(jsondata);
-  highstocks(jsondata);
+  highstocks(jsondata, 0);
   flechitas();
 
-  
+
   $('#wrap').toggleClass('dissapear');
 
 
 });
 
 // Nono, te pido disculpas 24/04/17 //
+// Santa, no las acepto 09/05/17//
