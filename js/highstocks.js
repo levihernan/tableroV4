@@ -3,8 +3,10 @@ function highstocks(dataset, idCat, idVar){
   if (jsondata[idCat].variables[idVar].serie.variacionPorcentual) {
     suffixporcentual = "%"
   }
-
-
+tempData = [];
+for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
+  tempDataValor += dataset[idCat].variables[idVar].serie.data[i].slice(0,2)
+}
 
 
   Highcharts.setOptions({
