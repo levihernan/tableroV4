@@ -3,10 +3,13 @@ function highstocks(dataset, idCat, idVar){
   if (jsondata[idCat].variables[idVar].serie.variacionPorcentual) {
     suffixporcentual = "%"
   }
-tempData = [];
+tempDataValor = [];
+tempDataVariacion = [];
 for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
-  tempDataValor += dataset[idCat].variables[idVar].serie.data[i].slice(0,2)
+  tempDataValor[i] = dataset[idCat].variables[idVar].serie.data[i].slice(0,2);
+  tempDataVariacion[i] = [dataset[idCat].variables[idVar].serie.data[i][0],dataset[idCat].variables[idVar].serie.data[i][2]];
 }
+
 
 
   Highcharts.setOptions({
@@ -92,7 +95,7 @@ for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
       series: [{
         type: 'line',
         name: jsondata[idCat].variables[idVar].serie.titulo,
-        data: jsondata[idCat].variables[idVar].serie.dataValor,
+        data: tempDataValor,
         tooltip: {
           valueDecimals: 2,
           valueSuffix: jsondata[idCat].variables[idVar].serie.simboloUnidad,
@@ -101,7 +104,7 @@ for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
       }, {
         type: 'column',
         name: 'Variación anual',
-        data: jsondata[idCat].variables[idVar].serie.dataVariacion,
+        data: tempDataVariacion,
         yAxis: 1,
         color: '#00b9f1',
         negativeColor: '#767676',
@@ -127,7 +130,7 @@ for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
 
       series: [{
         name: jsondata[idCat].variables[idVar].serie.titulo,
-        data: jsondata[idCat].variables[idVar].serie.dataValor,
+        data: tempDataValor,
         tooltip: {
           valueDecimals: 2,
           valueSuffix: jsondata[idCat].variables[idVar].serie.simboloUnidad,
@@ -137,5 +140,6 @@ for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
     })
   }
 
+drawUltimosDatos(tempDataValor, tempDataVariacion, jsondata[idCat].variables[idVar].serie.variacion)
 
 };

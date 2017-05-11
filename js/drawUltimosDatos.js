@@ -1,4 +1,4 @@
-function drawUltimosDatos(dataset, idCat, idVar){
+function drawUltimosDatos(dataValor, dataVariacion, hayVariacion){
   var month = new Array(12);
   month[0] = "Ene";
   month[1] = "Feb";
@@ -13,6 +13,9 @@ function drawUltimosDatos(dataset, idCat, idVar){
   month[10] = "Nov";
   month[11] = "Dic";
 
-  tempDataValor = dataset[0].variables[1].serie.dataValor.slice(-12)
-  tempDataVariacion = dataset[0].variables[1].serie.dataVariacion.slice(-12)
+  ultimosDatosValor = dataValor.slice(-12);
+  if (hayVariacion) {
+    ultimosDatosVariacion = dataVariacion.slice(-12);
+  }
+  
 }
