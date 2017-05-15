@@ -13,35 +13,54 @@ function drawUltimosDatos(dataset, idCat, idVar){
   month[10] = "Nov";
   month[11] = "Dic";
 
-tempDataset =  dataset[idCat].variables[idVar].serie.data.slice(-12);
+  $('#ultimosDatosTable').html('');
 
-tableTitle = "";
+  tempDataset =  dataset[idCat].variables[idVar].serie.data.slice(-12);
 
-tableHead = "<thead><tr><td>Período</td><td>" + dataset[idCat].variables[idVar].serie.titulo + "</td>";
+  tableTitle = "";
 
-if ( dataset[idCat].variables[idVar].serie.variacion) {
-    tableHead += "<td>Variación</td>"
-tableHead += "</tr></thead>"
-tableRow = "";
-for (var i = 0; i < tempDataset.length; i++) {
-  tempDate = new Date(tempDataset[i][0]);
-  tableRow += "<tr><td>" + month[tempDate.getUTCMonth() - 1] + " " + tempDate.getUTCFullYear() + "</td><td>" + tempDataset[i][1] + "</td><td>" + tempDataset[i][2] +"</tr>"
-}
-}
+  tableHead = "<thead class='tableHead'><tr><td class='center-align'>Período</td><td class='center-align'>" + dataset[idCat].variables[idVar].serie.titulo + "</td>";
 
-else{
-tableHead += "</tr></thead>"
-tableRow = "";
-for (var i = 0; i < tempDataset.length; i++) {
-  tempDate = new Date(tempDataset[i][0]);
-  tableRow += "<tr><td>" + month[tempDate.getUTCMonth() - 1] + " " + tempDate.getUTCFullYear() + "</td><td>" + tempDataset[i][1] + "</td></tr>"
-}
-}
+  if ( dataset[idCat].variables[idVar].serie.variacion) {
+    tableHead += "<td class='center-align'>Variación</td>"
+    tableHead += "</tr></thead>"
+    tableRow = "";
+    for (var i = 0; i < tempDataset.length; i++) {
+      tempDate = new Date(tempDataset[i][0]);
+      tableRow += "<tr class='rowTablero";
+      if (dataset[idCat].variables[idVar].tablero.flecha) { tableRow += " showArrow";};
+      if (dataset[idCat].variables[idVar].tablero.invertirFlecha) { tableRow += " invertirArrow";};
 
-tableBody = "<tbody>" + tableRow + "</tbody>"
+      tableRow += "'><td>" + month[tempDate.getUTCMonth()] + " " + tempDate.getUTCFullYear() + "</td><td>" + tempDataset[i][1] + "</td>";
 
-$('#ultimosDatosTable').append(tableHead);
-$('#ultimosDatosTable').append(tableBody);
+      if (tempDataset[i][2]>0) {
+        tableRow +=  "<td class='upValue'>"
+      }
+      else if (tempDataset[i][2]<0) {
+        tableRow +=  "<td class='downValue'>"
+      }
+      tableRow += tempDataset[i][2];
+      if (dataset[idCat].variables[idVar].tablero.variacionPorcentual) {
+        tableRow += "%";
+      }
+      tableRow += "</tr>"
+    }
+
+  }
+
+  else{
+    tableHead += "</tr></thead>"
+    tableRow = "";
+    for (var i = 0; i < tempDataset.length; i++) {
+      tempDate = new Date(tempDataset[i][0]);
+      tableRow += "<tr class='rowTablero'><td>" + month[tempDate.getUTCMonth()] + " " + tempDate.getUTCFullYear() + "</td><td>" + tempDataset[i][1] + "</td></tr>"
+    }
+  }
+
+  tableBody = "<tbody>" + tableRow + "</tbody>"
+
+  $('#ultimosDatosTable').append(tableHead);
+  $('#ultimosDatosTable').append(tableBody);
 
 
 }
