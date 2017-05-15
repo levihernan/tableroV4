@@ -34,10 +34,13 @@ function drawUltimosDatos(dataset, idCat, idVar){
       tableRow += "'><td>" + month[tempDate.getUTCMonth()] + " " + tempDate.getUTCFullYear() + "</td><td>" + tempDataset[i][1] + "</td>";
 
       if (tempDataset[i][2]>0) {
-        tableRow +=  "<td class='upValue'>"
+        tableRow +=  "<td class='upValue'>";
       }
       else if (tempDataset[i][2]<0) {
-        tableRow +=  "<td class='downValue'>"
+        tableRow +=  "<td class='downValue'>";
+      }
+      else{
+        tableRow += "<td>";
       }
       tableRow += tempDataset[i][2];
       if (dataset[idCat].variables[idVar].tablero.variacionPorcentual) {

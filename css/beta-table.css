@@ -6,6 +6,11 @@
 		display:block !important;
 	}
 }
+
+.hideContainer{
+	display: none;
+}
+
 .spreadedTablero{
 	padding: 0 80px !important;
 }

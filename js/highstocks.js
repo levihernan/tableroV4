@@ -1,4 +1,10 @@
 function highstocks(dataset, idCat, idVar){
+
+  if($('#chartContainer').hasClass('hideContainer')){
+    $('#tableroContainer').toggleClass('hideContainer');
+    $('#chartContainer').toggleClass('hideContainer');
+  }
+
   suffixporcentual = "";
   if (jsondata[idCat].variables[idVar].serie.variacionPorcentual) {
     suffixporcentual = "%"

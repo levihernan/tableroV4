@@ -45,21 +45,10 @@ function tabulate(dataset) {
 }
 
 
-// function flechitas() {
-//   for (var i = 0; i < $('.ultimodatovar').length; i++) {
-//     if ($('.ultimodatovar')[i].innerHTML < 0) {
-//       $('.ultimodatovar')[i].classList.add("downValue");
-//     }
-//     if ($('.ultimodatovar')[i].innerHTML > 0) {
-//       $('.ultimodatovar')[i].classList.add("upValue");
-//     }
-//   }
-//   for (var i = 0; i < $('.acumuladovar').length; i++) {
-//     if ($('.acumuladovar')[i].innerHTML < 0) {
-//       $('.acumuladovar')[i].classList.add("downValue");
-//     }
-//     if ($('.acumuladovar')[i].innerHTML > 0) {
-//       $('.acumuladovar')[i].classList.add("upValue");
-//     }
-//   }
-// }
+
+function toggleTablero(){
+  if($('#tableroContainer').hasClass('hideContainer')){
+      $('#chartContainer').toggleClass('hideContainer');
+      $('#tableroContainer').toggleClass('hideContainer');
+  }
+};
