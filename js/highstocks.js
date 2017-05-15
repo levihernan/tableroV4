@@ -140,6 +140,6 @@ for (var i = 0; i < dataset[idCat].variables[idVar].serie.data.length ; i++) {
     })
   }
 
-drawUltimosDatos(tempDataValor, tempDataVariacion, jsondata[idCat].variables[idVar].serie.variacion)
+drawUltimosDatos(dataset, idCat, idVar);
 
 };
