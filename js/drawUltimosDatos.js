@@ -27,7 +27,7 @@ function drawUltimosDatos(dataset, idCat, idVar){
     tableRow = "";
     for (var i = 0; i < tempDataset.length; i++) {
       tempDate = new Date(tempDataset[i][0]);
-      tableRow += "<tr class='rowTablero";
+      tableRow += "<tr class='";
       if (dataset[idCat].variables[idVar].tablero.flecha) { tableRow += " showArrow";};
       if (dataset[idCat].variables[idVar].tablero.invertirFlecha) { tableRow += " invertirArrow";};
 
