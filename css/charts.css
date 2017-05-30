@@ -7,6 +7,8 @@ html{
   width: 90%;
 }
 
+
+
 #ultimosDatosTable tr td:last-child {
   //font-style: italic;
   //background-color: rgba(255, 255, 255, 0.4);
@@ -75,18 +77,23 @@ html{
   width: 100%;
   background-color: #fafafa;
 }
+#chartContainer{
+  padding-top: 50px;
+}
 .highcharts-title {
   font-size: 22px !important;
   font-weight: bold;
   text-transform: uppercase;
   color: #0089c7 !important;
   fill: #0089c7 !important;
-  //text-align: left;
+  text-align: center;
 }
-#ultimosDatosUnidades{
-  //text-align: left;
-  font-size: 14px;
-  margin-bottom: 20px;
+#ultimosDatosUnit{
+  width: 100%;
+  text-align: center;
+}
+#ultimosDatosDescription{
+  text-align: center;
 }
 .highcharts-credits{
   //font-size: 16px !important;

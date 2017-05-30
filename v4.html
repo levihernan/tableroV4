@@ -18,14 +18,17 @@
   <script src="js/displayMenu.js"></script>
   <script src="js/drawUltimosDatos.js"></script>
   <script src="https://code.highcharts.com/stock/highstock.js"></script>
-  <script src="js/highstocks.js"></script>
-  <script src="js/loadjson.js"></script>
+  <!-- <script src="http://code.highcharts.com/modules/exporting.js"></script> -->
 
   <link rel="stylesheet" href="css/beta-table.css">
   <link rel="stylesheet" href="css/charts.css">
   <link rel="stylesheet" href="css/loader.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="js/floatThead.js"></script>
+  <script src="js/highstocks.js"></script>
+  <script src="js/loadjson.js"></script>
 
 </head>
 
@@ -80,6 +83,11 @@
 </div>
 </nav>
 </header>
+<div class="blackBanner">
+  <div class="container">
+    Tablero de la Economía Real
+  </div>
+</div>
 <div class="" id="wrap"></div>
 <ul id="slide-out" class="side-nav fixed right-aligned">
   <li><a href="http://www.produccion.gob.ar/portal-de-datos-interno/" target="_blank"><i class="material-icons">language</i>Portal de Datos</a></li>
@@ -97,55 +105,60 @@
   <div id="tableroContainer">
 
 
-  <p id="demo" class="light-blue darken-2"></p>
-  <table id="desktopTable" class="table">
-    <thead class="tableHead">
-      <tr>
-        <td rowspan="2" class="center-align">Indicador</td>
-        <td rowspan="2" class="center-align">Unidad</td>
-        <td colspan="3" class="center-align">Últimos Datos</td>
-        <td colspan="3" class="center-align">Acumulado</td>
-      </tr>
-      <tr>
-        <td class="center-align">Período</td>
-        <td class="center-align">Valor</td>
-        <td class="center-align">Variación</td>
-        <td class="center-align">Período</td>
-        <td class="center-align">Valor</td>
-        <td class="center-align">Variación</td>
-      </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
-  </table>
-
-  <div id="aclaraciones">
-
-  </div>
-</div>
-<div id="chartContainer" class="hideContainer">
-  <div class="row">
-
-  <div class="col s12 m8">
-
-  <div class="" id="chart">
-
-  </div>
-</div>
-
-
-  <div class="col s12 m4">
-    <h1 class="highcharts-title" id="ultimosDatosSubtitle">Últimos Datos</h1>
-    <p id="ultimosDatosUnit"></p>
-    <table id="ultimosDatosTable" class="table">
-
+    <p id="demo" class="light-blue darken-2"></p>
+    <table id="desktopTable" class="table desktopTable">
+      <thead class="tableHead">
+        <tr>
+          <td rowspan="2" class="center-align">Indicador</td>
+          <td rowspan="2" class="center-align">Unidad</td>
+          <td colspan="3" class="center-align">Últimos Datos</td>
+          <td colspan="3" class="center-align">Acumulado</td>
+        </tr>
+        <tr>
+          <td class="center-align">Período</td>
+          <td class="center-align">Valor</td>
+          <td class="center-align">Variación</td>
+          <td class="center-align">Período</td>
+          <td class="center-align">Valor</td>
+          <td class="center-align">Variación</td>
+        </tr>
+      </thead>
     </table>
-    <p id="ultimosDatosDescription"></p>
+    <div class="aclaraciones">
+      <ul>
+        <li id="ultimaActualizacion">
+        </li><li>(1) La variación es en términos reales</li>
+        <li>(2) La variación es en valores absolutos</li>
+        <li>(3) La variación acumulada es repecto a Diciembre 2015</li>
+        <li>(4) Tasa activa del Banco Nación al Sector Privado No Financiero</li>
+        <li>(5) Sector Público Nacional No Financiero</li>
+        <li></li>
+      </ul>
+    </div>
   </div>
-</div>
+  <div id="chartContainer" class="hideContainer">
+    <div class="row">
 
-</div>
+      <div class="col s12 m8">
+
+        <h1 class="highcharts-title" id="chartTitle">Chart title</h1>
+        <div class="" id="chart">
+
+        </div>
+      </div>
+
+
+      <div class="col s12 m4">
+        <h1 class="highcharts-title" id="ultimosDatosSubtitle">Últimos Datos</h1>
+        <p id="ultimosDatosUnit">Últimos datos unit</p>
+        <table id="ultimosDatosTable" class="table">
+
+        </table>
+        <p id="ultimosDatosDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+  </div>
 
 </div>
 
@@ -168,6 +181,9 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r77/three.min.js'></script>
   <script type="text/javascript" src="js/loader.js"></script>
+
+
+
 </body>
 
 </html>

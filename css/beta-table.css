@@ -184,7 +184,7 @@ tbody tr:last-child td{
 	text-transform: uppercase;
 	vertical-align: middle !important;
 }
-#desktopTable{
+.desktopTable{
 	width: 100%;
 	position: relative;
 	font-size: 12px;
@@ -220,4 +220,10 @@ tbody tr:last-child td{
 }
 .invertirArrow .downValue{
 	color: #00B050 !important;
+}
+
+.blackBanner{
+	background: #666;
+	color:#fff;
+	padding: 10px 0
 }
