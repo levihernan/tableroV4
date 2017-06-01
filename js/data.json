@@ -15,7 +15,7 @@
         "valor": 2330123,
         "variacion": -7
       },
-      "flecha": true,
+      "flecha": false,
       "invertirFlecha": true,
       "variacionPorcentual": false
     },
@@ -307,7 +307,7 @@
                 "variacion": 7
               },
               "flecha": true,
-              "invertirFlecha": false,
+              "invertirFlecha": true,
               "variacionPorcentual": true
             },
             "serie": {
@@ -353,8 +353,8 @@
                 "valor": 2330123,
                 "variacion": -7
               },
-              "flecha": true,
-              "invertirFlecha": false,
+              "flecha": false,
+              "invertirFlecha": true,
               "variacionPorcentual": true
             },
             "serie": {

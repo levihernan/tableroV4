@@ -2,13 +2,21 @@ html{
   overflow-x: hidden;
 }
 @media ( max-width: 1169px ) {
+  .desktopTable{
+    display: none
+  }
+  #mobileTable{
+    display: initial;
+  }
   #tableroFloatingHeader{
     width: Calc( 90% + 0px ) !important;
     //box-shadow: 0 0 40px -15px #000;
     margin-left: -1px !important;
     top: 50px !important;
   }
-
+  .tableHead{
+    display: none;
+  }
   #tableroContainer{
     width: 90% !important;
   }

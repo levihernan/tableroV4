@@ -7,6 +7,10 @@
 	}
 }
 
+#mobileTable{
+	display: none;
+}
+
 .hideContainer{
 	display: none;
 }
@@ -49,10 +53,12 @@
 .fullwidth{
 	width: 100%;
 	display: block;
+	padding: 0
 }
 .halfwidth{
 	width: 50%;
 	display: inline-block;
+	padding: 0;
 }
 
 .mobileIndicador{
@@ -93,10 +99,12 @@
 	transition: all ease 0.3s;
 	overflow: hidden;
 	margin: 2px auto;
-	border-radius: 3px
+	border-radius: 3px;
+	transition: all ease 0,3s;
 }
 .mobileSerieActive{
-	height: 210px
+	height: 210px;
+  margin-bottom: 25px;
 }
 .mobileCategoria td{
 	width: 100%;
